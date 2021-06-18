@@ -1,0 +1,9 @@
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Common\bin\Release\MyEveryNote.Common.dll
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Common\bin\Release\MyEveryNote.Common.pdb
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Common\bin\Release\MyEveryNote.Entity.dll
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Common\bin\Release\MyEveryNote.Entity.pdb
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Common\obj\Release\MyEveryNote.Common.csprojAssemblyReference.cache
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Common\obj\Release\MyEveryNote.Common.csproj.CoreCompileInputs.cache
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Common\obj\Release\MyEveryNote.Common.csproj.CopyComplete
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Common\obj\Release\MyEveryNote.Common.dll
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Common\obj\Release\MyEveryNote.Common.pdb

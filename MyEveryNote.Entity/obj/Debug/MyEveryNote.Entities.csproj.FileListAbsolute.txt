@@ -1,0 +1,6 @@
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Entity\bin\Debug\MyEveryNote.Entity.dll
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Entity\bin\Debug\MyEveryNote.Entity.pdb
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Entity\obj\Debug\MyEveryNote.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Entity\obj\Debug\MyEveryNote.Entity.dll
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Entity\obj\Debug\MyEveryNote.Entity.pdb
+C:\Users\Alperen\source\repos\MyEveryNoteSolution\MyEveryNote.Entity\obj\Debug\MyEveryNote.Entities.csprojAssemblyReference.cache

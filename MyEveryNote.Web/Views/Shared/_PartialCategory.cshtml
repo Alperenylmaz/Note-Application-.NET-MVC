@@ -1,0 +1,17 @@
+﻿@using MyEveryNote.Web.Models
+@using MyEveryNote.Entity
+
+@{ 
+    List<Category> list = CacheHelper.GetCategoryFromCache();
+}
+
+<h1 class="my-4"><a href="@Url.Action("Index","Home")" style="text-decoration:none;">Kategoriler</a></h1>
+<div class="list-group">
+
+    @foreach (var category in list)
+    {
+        <a href="/Home/ByCategoryId/@category.Id" title="@category.Description" class="list-group-item"><i class="bi bi-arrow-right"></i> @category.Title
+        </a>
+    }
+
+</div>

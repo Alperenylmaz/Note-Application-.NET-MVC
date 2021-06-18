@@ -1,0 +1,66 @@
+﻿@model IEnumerable<MyEveryNote.Entity.Category>
+
+@{
+    ViewBag.Title = "Categories";
+}
+
+<h2 style="margin-left:15px">Categories</h2>
+
+<p style="margin-left:15px">
+    @DefaultBootstrap.LinkButton("/Category/Create", "info" , string.Empty, "Create New", "bi bi-plus", "Create New")
+</p>
+<div class="col-md-12">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreationOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifiedOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifiedUsername)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreationOn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModifiedOn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModifiedUsername)
+                </td>
+                <td>
+
+                    @DefaultBootstrap.LinkButton("/Category/Edit/" + item.Id, "success", string.Empty, "Edit", "bi bi-funnel", string.Empty)
+
+                    @DefaultBootstrap.LinkButton("/Category/Details/" + item.Id, "info", string.Empty, "Edit", "bi bi-search", string.Empty)
+
+                    @DefaultBootstrap.LinkButton("/Category/Delete/" + item.Id, "danger", string.Empty, "Edit", "bi bi-trash", string.Empty)
+
+                   
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+

@@ -1,0 +1,62 @@
+﻿@using MyEveryNote.Entity
+@using MyEveryNote.Web.Models
+
+@model List<Comment>
+
+@{
+    EveryNoteUser user = CurrentSession.User;
+}
+
+@foreach (Comment item in Model)
+{
+    <div class="media" style="margin:10px">
+        <img class="mr-3" src="https://picsum.photos/80/80" alt="Generic placeholder image">
+        <div class="media-body">
+            <span class="col-md-10" id="comment_span_@item.Id" contenteditable="false">@item.Text</span>
+
+            @if (user != null && user.Id == item.Owner.Id)
+            {
+                <span class="pull-right">
+                    <button type="button" class="btn btn-warning btn-xs" data-edit-mode="false" onclick="doComment(this,'edit_click',@item.Id,'#comment_span_@item.Id');">
+                        Edit
+                    </button>
+                    <button type="button" class="btn btn-warning btn-xs" onclick="doComment(this,'delete_click',@item.Id);">
+                        Sil
+                    </button>
+                </span>
+            }
+
+            <br />
+            <small>
+                <span>
+                    @item.ModifiedOn &nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    @item.Owner.Username &nbsp;&nbsp;&nbsp;
+                </span>
+            </small>
+        </div>
+    </div>
+}
+
+
+
+@if (user != null)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group mb-3">
+                <button class="btn btn-success" type="button" onclick="doComment(this,'new_click',-1);"><span>Gönder</span></button>
+                <input type="text" class="form-control" id="new_comment_text" placeholder="yorumunuz.." aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+        </div>
+    </div>
+
+    
+
+}

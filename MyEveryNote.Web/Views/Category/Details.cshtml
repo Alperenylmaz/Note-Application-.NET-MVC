@@ -1,0 +1,63 @@
+﻿@model MyEveryNote.Entity.Category
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 style="margin-left:400px;margin-right:400px; margin-top:20px">Details</h2>
+
+<div class="form-horizontal" style="margin-left:400px;margin-right:400px;">
+    <hr />
+    <div class="form-group">
+
+        @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+        <br />
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.Title)
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+        <br />
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.Description)
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        @Html.LabelFor(model => model.CreationOn, htmlAttributes: new { @class = "control-label col-md-2" })
+        <br />
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.CreationOn)
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        @Html.LabelFor(model => model.ModifiedOn, htmlAttributes: new { @class = "control-label col-md-2" })
+        <br />
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.ModifiedOn)
+        </div>
+
+
+    </div>
+
+    <div class="form-group">
+
+        @Html.LabelFor(model => model.ModifiedUsername, htmlAttributes: new { @class = "control-label col-md-2" })
+        <br />
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.ModifiedUsername)
+        </div>
+
+
+    </div>
+    @DefaultBootstrap.LinkButton("/Category/Edit", "success", string.Empty, "", "bi bi-funnel", "Edit")
+    @DefaultBootstrap.LinkButton("/Category/Index", "link", string.Empty, "Back to List", "bi bi-arrow-left-circle", "Back to List")
+
+</div>
+

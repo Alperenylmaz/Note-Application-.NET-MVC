@@ -1,0 +1,8 @@
+﻿.validation-summary-errors {
+    margin: 15px auto -20px auto;
+}
+
+    .validation-summary-errors ul {
+        list-style-type: none;
+        color: red;
+    }

@@ -1,2 +1,4 @@
 # Note-Application-.NET-MVC
 Note Sharing Application with .Net MVC
+
+There is a user system where users can register and log into the system. The user will be able to receive an activation mail after becoming a member. The member's profile page and note management pages are available. Users can share notes after logging into the system. Can view notes shared by other users. They will be able to like/unlike and comment on these notes. It will be possible to search and list in the notes. There are admins in the system. Admins can add, change and delete categories. The application is written using ASP.NET MVC architecture.
